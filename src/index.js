@@ -18,3 +18,5 @@ const person={
 // access object memeber
 // let pname=person.name;
 console.log(person.walk());
+// access object member in another way
+console.log(person['name']);
