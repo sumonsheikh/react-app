@@ -12,7 +12,9 @@ const person={
     walk(){
         console.log("this person can talk in bangla");
     },
-    talk(){}
+    talk(){
+        console.log(this);
+    }
 
 }
 // access object memeber
@@ -20,3 +22,10 @@ const person={
 console.log(person.walk());
 // access object member in another way
 console.log(person['name']);
+// this keyword
+
+person.talk();
+
+const talk=person.talk;
+console.log(talk);
+talk();
