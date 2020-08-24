@@ -29,3 +29,15 @@ person.talk();
 const talk=person.talk;
 console.log(talk);
 talk();
+
+
+
+// normanl Function
+const squre =function(num){
+    return num*num;
+}
+console.log(squre(10));
+
+// Arrow function
+const squreNum = num1 => num1*num1;
+console.log(squreNum(5));
