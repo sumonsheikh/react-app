@@ -57,3 +57,17 @@ console.log(activeJob);
 const colors=['red','green','blue'];
 const items= colors.map(color=> `<li>${color}</li>`);
 console.log(items);
+
+// Object destructing
+const address={
+    street:'',
+    city:'',
+    country:''
+}
+// extract the value of the property and set the value within new variable
+const street=address.street;
+const city=address.city;
+const country=address.country;
+
+// object destrunctin solve the repeat the address keyword 
+const {street,city,country}=address;
