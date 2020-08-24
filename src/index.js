@@ -52,3 +52,8 @@ const jobs = [
 //arrow  function
 const activeJob=jobs.filter(job=> job.isActive);
 console.log(activeJob);
+
+// map function
+const colors=['red','green','blue'];
+const items= colors.map(color=>'<li>'+ color+'</li>');
+console.log(items);
