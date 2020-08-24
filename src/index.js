@@ -64,10 +64,10 @@ const address={
     city:'',
     country:''
 }
-// extract the value of the property and set the value within new variable
+// extract the value of the property and set the value within separate variable
 const street=address.street;
 const city=address.city;
 const country=address.country;
 
 // object destrunctin solve the repeat the address keyword 
-const {street,city,country}=address;
+const {street: st}=address;
