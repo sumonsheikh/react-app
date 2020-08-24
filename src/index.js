@@ -75,14 +75,21 @@ const {street: st}=address;
 // spreed operator 
 const first=[1,2,3];
 const second=[4,5,6];
+const third=[7,8,9];
 
 // simple concatnation with concat function
 const combined=first.concat(second);
 console.log(combined);
 //concat with spreed operator
-const combined2=[...first,...second];
+const combined2=[...first,...second,...third];
 console.log(combined2);
 
 // clone the array with spreed operator
 const clone=[...first];
 console.log(clone);
+
+// concating two object with spreed operator
+const firstObj={name:"sumon"};
+const secondObj={job:"software engineer"};
+const combindeObj={...firstObj,...secondObj,location:"Bangladesh"};
+console.log(combindeObj);
