@@ -71,3 +71,18 @@ const country=address.country;
 
 // object destrunctin solve the repeat the address keyword 
 const {street: st}=address;
+
+// spreed operator 
+const first=[1,2,3];
+const second=[4,5,6];
+
+// simple concatnation with concat function
+const combined=first.concat(second);
+console.log(combined);
+//concat with spreed operator
+const combined2=[...first,...second];
+console.log(combined2);
+
+// clone the array with spreed operator
+const clone=[...first];
+console.log(clone);
