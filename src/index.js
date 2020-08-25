@@ -1,3 +1,4 @@
+import {Teacher} from './teacher';
 function printNumber(){
     for(let i =0;i<5;i++){
         console.log(i);
@@ -94,26 +95,7 @@ const secondObj={job:"software engineer"};
 const combindeObj={...firstObj,...secondObj,location:"Bangladesh"};
 console.log(combindeObj);
 
-//class
-class Person{
-    constructor(name){
-        this.name=name;
-    }
-    walk(){
-        console.log("person can walk");
-    }
-}
 
-//inheritance 
-class Teacher extends Person{
-    constructor(name,degree){
-        //to use custom construtor in child class we need to call parent
-        //class constructor using super() and pass the value of parrent class
-        super(name);
-        this.degree=degree;
-    }
 
-    teach(){
-        console.log('teach');
-    }
-}
+const teacher=new Teacher('sumon','Bsc in cse');
+teacher.teach();
