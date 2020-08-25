@@ -93,3 +93,16 @@ const firstObj={name:"sumon"};
 const secondObj={job:"software engineer"};
 const combindeObj={...firstObj,...secondObj,location:"Bangladesh"};
 console.log(combindeObj);
+
+//class
+class Person{
+    constructor(name){
+        this.name=name;
+    }
+    walk(){
+        console.log("person can walk");
+    }
+}
+
+const person =new Person("mosh");
+person.name;
